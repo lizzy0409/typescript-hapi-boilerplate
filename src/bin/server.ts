@@ -4,6 +4,7 @@ import mongoose from 'mongoose'
 import Handlebars from 'handlebars'
 import Vision from '@hapi/vision'
 import path from 'path'
+import { ROUTER_V1 } from '../routes'
 
 class Server {
     // Initialize Hapi server
@@ -34,6 +35,9 @@ class Server {
                 relativeTo: __dirname,
                 path: path.join(__dirname, '../views')
             })
+
+            // Set routes
+            await server.route(ROUTER_V1)
 
             // Start server
             await server.start()
