@@ -1,5 +1,5 @@
 import Hapi from '@hapi/hapi'
-import Joi from 'joi'
+// import Joi from 'joi'
 import { METHOD, VERSION, ENDPOINT } from '../../../constant'
 
 const PUBLIC_ROUTER: Hapi.ServerRoute[] = [
