@@ -1,7 +1,7 @@
-# 👷‍♂️🚧 This library is under construction 🚧👷‍♂️ 
+# 👷‍♂️🚧 This project is under construction 🚧👷‍♂️ 
 
 # Hapi.js and typescript scaffolding 
-We @ [formysister](https://formysister.github.io) love [hapi.js](https://www.hapi.dev). If you haven't used this beautiful, scalable and carefully crafted framework for real world application, you should check it out!
+ @[formysister](https://formysister.github.io) love [hapi.js](https://www.hapi.dev). If you haven't used this beautiful, scalable and carefully crafted framework for real world application, you should check it out!
 
 This is our official starter kit which has been tested in our production and passed all the scalability, performance and reliability expectations.
 
