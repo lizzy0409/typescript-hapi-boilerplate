@@ -1,5 +1,3 @@
-import indexRoute from './endpoints'
+import ROUTER_V1 from "./v1";
 
-export default [].concat(
-    indexRoute
-)
+export { ROUTER_V1 }

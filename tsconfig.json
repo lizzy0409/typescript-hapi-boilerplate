@@ -1,16 +1,15 @@
 {
-    "compilerOptions": {
-      "outDir": "./dist",
-      "allowJs": false,
-      "target": "es2020",
-      "sourceMap": true,
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "moduleResolution": "node",
-    },
-    "include": [
-      "main.ts",
-      "./src/**/*",
-    ],
-    "exclude": ["node_modules", "webpack.*.js"]
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2020",
+    "lib": ["DOM", "ES5"],
+    "declaration": true,
+    "strict": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types"],
+    "esModuleInterop": true,
+    "sourceMap": false
   }
+}

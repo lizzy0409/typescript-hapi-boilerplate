@@ -1,37 +1,24 @@
 {
-  "name": "hapi-typescript-boilerplate",
+  "name": "hapi-boilerplate",
   "version": "1.0.0",
-  "description": "Scalable and delightful way to write #hapijs app with #typescript #hapily",
-  "bugs": "https://github.com/nomadovoip/hapi-typescript-boilerplate/issues",
-  "homepage": "https://www.nomado.eu",
-  "main": "main.ts",
+  "description": "",
+  "main": "index.ts",
   "scripts": {
-    "build": "NODE_ENV=production webpack",
-    "dev": "nodemon",
-    "test": "jest",
-    "test:watch": "jest --watchAll --coverage"
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "boilerplate",
-    "hapi.js",
-    "typescript",
-    "nomado",
-    "docker",
-    "docker swarm",
-    "gitlab"
-  ],
-  "author": "Asad Rizvi <alex@nomado.eu> (https://www.linkedin.com/in/aleyrizvi/)",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nomadovoip/hapi-typescript-boilerplate"
-  },
+  "keywords": [],
+  "author": "",
   "dependencies": {
     "@hapi/boom": "^9.0.0",
-    "@hapi/hapi": "^19.1.1",
+    "@hapi/hapi": "^20.2.2",
     "@hapi/joi": "^17.0.2",
     "@hapi/podium": "^4.0.0",
+    "@hapi/vision": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "handlebars": "^4.7.8",
     "install": "^0.13.0",
+    "mongoose": "^8.0.0",
     "npm": "^6.14.6"
   },
   "devDependencies": {
@@ -41,6 +28,7 @@
     "@types/node": "^13.1.8",
     "@types/webpack": "^4.41.2",
     "concurrently": "^5.0.2",
+    "esm": "^3.2.25",
     "jest": "^24.9.0",
     "nodemon": "^2.0.2",
     "ts-jest": "^24.3.0",
@@ -50,8 +38,5 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-node-externals": "^1.7.2"
-  },
-  "engines": {
-    "node": ">= 12"
   }
 }
