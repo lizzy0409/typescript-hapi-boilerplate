@@ -1,11 +1,16 @@
 {
     "compilerOptions": {
-      "module": "ES6",
-      "esModuleInterop": true,
-      "target": "es6",
-      "moduleResolution": "node",
+      "outDir": "./dist",
+      "allowJs": false,
+      "target": "es2020",
       "sourceMap": true,
-      "outDir": "dist"
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "moduleResolution": "node",
     },
-    "lib": ["es2015", "es6"]
+    "include": [
+      "main.ts",
+      "./src/**/*",
+    ],
+    "exclude": ["node_modules", "webpack.*.js"]
   }

@@ -1,1 +1,11 @@
+# npm modules
 node_modules
+
+# dist folder
+dist
+
+# test coverage
+coverage
+
+# dotenv
+.env
