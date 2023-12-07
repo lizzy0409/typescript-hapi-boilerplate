@@ -2,6 +2,9 @@
 import Hapi from '@hapi/hapi'
 import Joi from '@hapi/joi'
 
+// ** import controller
+import { DataController } from '../../../controller'
+
 // ** import custom utilities
 import { ResponseUtil } from '../../../utils'
 
@@ -32,7 +35,9 @@ const PUBLIC_ROUTER: Hapi.ServerRoute[] = [
         path: VERSION.V1 + ENDPOINT.POST.DEFAULT,
         options: {
             handler: (request, reply) => {
-                return reply.view('index')
+                const response = DataController.checkResponse(request.payload)
+
+                return ResponseUtil.sendResponse(response, reply)
             },
             validate: {
                 failAction: ResponseUtil.faileAction,

@@ -1,10 +1,15 @@
 import 'dotenv/config'
+// ** import external libraries
 import Hapi from '@hapi/hapi'
 import mongoose from 'mongoose'
 import Handlebars from 'handlebars'
 import Vision from '@hapi/vision'
 import path from 'path'
+
+// ** import routes
 import { ROUTER_V1 } from '../routes'
+
+// ** import app constants
 import { METHOD, ENDPOINT } from '../constant'
 
 declare global {
