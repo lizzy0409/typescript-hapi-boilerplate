@@ -1,6 +1,6 @@
 {
-    "watch": ["src", "./index.ts"],
-    "ext": "ts",
-    "ignore": ["src/**/*.test.ts"],
-    "exec": "node --max-old-space-size=1024 -r ts-node/register ./index.ts"
-  }
+  "watch": ["src", "./index.ts"],
+  "ext": "ts",
+  "ignore": ["src/**/*.test.ts"],
+  "exec": "node --max-old-space-size=1024 -r ts-node/register ./index.ts"
+}
