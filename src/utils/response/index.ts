@@ -1,4 +1,7 @@
 import { Request, ResponseObject, ResponseToolkit } from '@hapi/hapi'
+import { Boom } from '@hapi/boom'
+
+// ** import custom types
 import { ResponsePayload } from '../../types'
 
 class ResponseUtil {

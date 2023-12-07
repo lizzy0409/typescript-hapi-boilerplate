@@ -1,5 +1,11 @@
+// ** import external libraries
 import Hapi from '@hapi/hapi'
 import Joi from '@hapi/joi'
+
+// ** import custom utilities
+import { ResponseUtil } from '../../../utils'
+
+// ** import app constants
 import { METHOD, VERSION, ENDPOINT } from '../../../constant'
 
 const PUBLIC_ROUTER: Hapi.ServerRoute[] = [
@@ -27,6 +33,14 @@ const PUBLIC_ROUTER: Hapi.ServerRoute[] = [
         options: {
             handler: (request, reply) => {
                 return reply.view('index')
+            },
+            validate: {
+                failAction: ResponseUtil.faileAction,
+                payload: Joi.object({
+                    number: Joi.number().required(),
+                    string: Joi.string().required(),
+                    optional: Joi.any()
+                })
             },
             description: 'API base default public endpoints (POST)',
             notes: 'Hit the endpoint to check if server is alive',
