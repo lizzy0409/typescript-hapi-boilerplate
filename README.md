@@ -1,19 +1,14 @@
 # 👷‍♂️🚧 This project is under construction 🚧👷‍♂️ 
 
 # Hapi.js and typescript scaffolding 
- @[formysister](https://formysister.github.io) love [hapi.js](https://www.hapi.dev). If you haven't used this beautiful, scalable and carefully crafted framework for real world application, you should check it out!
+
 
 This is our official starter kit which has been tested in our production and passed all the scalability, performance and reliability expectations.
 
 ## Getting started
 
 
-### Prerequisites
 
-Clone this repo.
-```
-git clone https://github.com/formysister/typescript-hapi-boilerplate.git`
-```
 
 ### Installation
 
@@ -110,11 +105,3 @@ In progress.
 # FAQ
 TODO: FAQ
 In progress.
-
-# Support
-Use any of the following medium for support:
-
-- Raise a ticket on [github](https://github.com/formysister/typescript-hapi-boilerplate/issues)
-- Reach me on my email (in package.json)
-- Reach me on my linkedin.
-- Reach on [portfolio website](https://formysister.github.io) and ask for me on chat(Shold be used as rarely as possible!)
